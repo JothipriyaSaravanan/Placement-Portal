@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  /* Professional Dark Blue Theme - Coordinator Style */
+  --primary: #3A86FF; /* Vibrant blue for active items and highlights */
+  --primary-hover: #3375E1;
+  --bg-main: #F4F6F8; /* Light grey for the main content area */
+  --bg-sidebar: #0A1929; /* Very dark navy blue for the sidebar */
+  --text-main: #121212; 
+  --text-muted: #5A6872;
+  --text-on-dark: #F0F4F8; /* Bright white/light grey for text on dark sidebar */
+  --text-on-dark-muted: #8899A6; /* Softer grey for muted items on dark bg */
+  --border-color: #DDE3E7;
+  --sidebar-border: #162B40; /* Border color for items within the dark sidebar */
+  --white: #ffffff;
+  --success: #2E7D32;
+  --danger: #C62828;
+  --transition: all 0.2s ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0 !important;
+  padding: 0 !important;
+  min-height: 100vh !important;
+  height: 100% !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-main);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
